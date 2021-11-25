@@ -13,10 +13,10 @@ int main()
     int mat[SIZE] = {};
     int rank[SIZE] = {};
 
-    for (int c = 0; c < SIZE; c++)
+    for (int c = 1; c <= SIZE; c++)
     {
-        printf("number: %d:", c + 1);
-        scanf("%d", &mat[c]);
+        printf("number: %d:", c);
+        scanf("%d", &mat[c-1]);
     }
 
     printf("\n");

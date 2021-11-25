@@ -1,6 +1,8 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "HW5-1.C": "cpp"
+        "HW5-1.C": "cpp",
+        "*.tcc": "c",
+        "limits": "c"
     }
 }
