@@ -2,26 +2,15 @@
 
 int main() {
 
-    int A[9] = {1,3,5,7,9,2,4,6,8};
-    int i = 0, j = 0;
-    int temp = 0;
-	int n = 9;
-    for (i = 0; i < n - 1; i++)
-    {
-            for (j = 0; j < n- 1; j++)
-            {
-                if (A[j] < A[j + 1])
-                {
-                    temp = A[j];
-                    A[j] = A[j + 1];
-                	A[j + 1] = temp;
-                }
-            }
-        }
-
-    for( i = 0; i < n; i++ ) {
-        printf("%d ", A[i]);
-    }
-
+    int a=123;
+    int *b=&a;
+    int *c;
+    int d=456;
+    *b=10;
+    c=&d;
+    c=b;
+    // printf("%d %d %d %d\n",&a,a,b,*b);
+    // printf("%d %d",*b,*c);
+    printf("%d",a);
 return 0;
-}
+}  
