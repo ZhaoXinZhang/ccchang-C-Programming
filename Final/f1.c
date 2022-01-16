@@ -37,8 +37,8 @@ int main(){
     }
 
     // printf("%d,%d\n\n\n",score[0][4],score[1][4]);
-    for(int i=0 ;i<20;++i){
-        for(int j=0 ;j<i;++j){
+    for(int i=0 ;i<20;i++){
+        for(int j=0 ;j<i;j++){
             if(score[j][4]<score[i][4]){
                 for(int k=0;k<5;k++){
                     temp[i][k]=score[j][k];
