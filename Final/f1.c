@@ -9,12 +9,12 @@ int main(){
     char name[100];
     char t[100];
     int score[100][100],temp[100][100];
-    float avg[100],aa,ba,ca,da,am,bm,cm,dm,aaa=0,bba=0,cca=0,dda=0;
+    float tavg[100],avg[100],aa,ba,ca,da,am,bm,cm,dm,aaa=0,bba=0,cca=0,dda=0;
     int a[100],b[100],c[100],d[100],total[100];
     FILE *fp;
     int ch;
     
-    if((fp=fopen("book1.txt","r"))==NULL){
+    if((fp=fopen("Book1.txt","r"))==NULL){
         printf("open file error!!\n");
         system("PAUSE");
         exit(0);
@@ -48,8 +48,12 @@ int main(){
                 t[i]=name[j];
                 name[j]=name[i];
                 name[i]=t[i];
+
+                tavg[i]=avg[i];
+                avg[i]=avg[j];
+                avg[j]=tavg[i];
             }
-                printf("i=%d,j=%d\n",i,j);
+                // printf("i=%d,j=%d\n",i,j);
         }
     }
 
